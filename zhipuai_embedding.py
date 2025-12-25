@@ -16,7 +16,7 @@ class ZhipuAIEmbeddings(Embeddings):
         """
         from zhipuai import ZhipuAI
         self.client = ZhipuAI()
-    
+        
     def embed_documents(self, texts: List[str]) -> List[List[float]]:
         """
         生成输入文本列表的 embedding.
